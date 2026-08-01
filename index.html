@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fatima Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>🎮 The Fatima Games 💜</h1>
+
+    <p>Are you a friend... or a foe?</p>
+
+    <p>Play to find out.</p>
+
+    <button id="enterBtn">ENTER</button>
+
+    <div id="welcomeScreen" style="display: none;">
+      <h2>💜 Welcome to The Fatima Games 💜</h2>
+
+      <p>What should the Fatima Council call you?</p>
+
+      <input
+          type="text"
+          id="playerName"
+          placeholder="Type your name">
+
+      <br><br>
+
+      <button id="continueBtn">Continue</button>
+    </div>
+
+    <!-- Question 1 -->
+    <div id="level1" style="display: none;">
+      <h2>🎮 LEVEL 1 - EASY</h2>
+
+      <h3>Question 1</h3>
+
+      <p>Which colour instantly reminds you of fatima?</p>
+
+      <button class="answer" id="q1correct">Purple 💜</button><br><br>
+      <button class="answer" id="q1wrong1">Blue</button>
+      <button class="answer" id="q1wrong2">Pink</button>
+      <button class="answer" id="q1wrong3">Green</button>
+    </div>
+
+    <!-- Question 2 -->
+    <div id="question2" style="display:none;">
+      <h3>Question 2</h3>
+
+      <p>Which birth order am I?</p>
+
+      <button class="answer" id="q2correct">First born</button><br><br>
+      <button class="answer" id="q2wrong1">Second born</button><br><br>
+      <button class="answer" id="q2wrong2">Third born</button><br><br>
+      <button class="answer" id="q2wrong3">Last born</button>
+    </div>
+
+    <!-- Question 3 -->
+    <div id="question3" style="display:none;">
+      <h3>Question 3</h3>
+
+      <p>Who is one artist that fatima is obsessed with?</p>
+
+      <button class="answer" id="q3wrong1">PND</button><br><br>
+      <button class="answer" id="q3wrong2">Lil Durk</button><br><br>
+      <button class="answer" id="q3correct">Bryson Tiller</button><br><br>
+      <button class="answer" id="q3wrong3">Ariana Grande</button>
+    </div>
+
+    <!-- Question 4 -->
+    <div id="question4" style="display:none;">
+      <h3>Question 4</h3>
+
+      <p>fatima is gone for hours which app is she using?</p>
+
+      <button class="answer" id="q4wrong1">TikTok</button><br><br>
+      <button class="answer" id="q4wrong2">Snapchat</button><br><br>
+      <button class="answer" id="q4wrong3">Instagram</button><br><br>
+      <button class="answer" id="q4correct">MovieBox</button>
+    </div>
+
+    <!-- Question 5 -->
+    <div id="question5" style="display:none;">
+      <h3>Question 5</h3>
+
+      <p>What's Fatima's favourite pet?</p>
+
+      <button class="answer" id="q5wrong1">Bunny</button><br><br>
+      <button class="answer" id="q5correct">Kitten</button><br><br>
+      <button class="answer" id="q5wrong2">Fish</button><br><br>
+      <button class="answer" id="q5wrong3">Puppy</button>
+    </div>
+
+    <!-- Question 6 -->
+    <div id="question6" style="display:none;">
+      <h3>🎧 Fatima File #6</h3>
+
+      <p>You've borrowed my headphones for the day. Which song are you almost guaranteed to hear first?</p>
+
+      <button class="answer" id="q6correct">Sorrows – Bryson Tiller</button><br><br>
+      <button class="answer" id="q6wrong1">Sure Thing – Miguel</button><br><br>
+      <button class="answer" id="q6wrong2">Fancy – Drake</button><br><br>
+      <button class="answer" id="q6wrong3">Needy – Ariana Grande</button>
+    </div>
+
+    <!-- Question 7 -->
+    <div id="question7" style="display:none;">
+      <h3>🐾 Fatima File #7</h3>
+
+      <p>Four lives are in danger. Without thinking twice, who would I instinctively run to first?</p>
+
+      <button class="answer" id="q7wrong1">A Dog</button><br><br>
+      <button class="answer" id="q7wrong2">A Man</button><br><br>
+      <button class="answer" id="q7correct">A Cat</button><br><br>
+      <button class="answer" id="q7wrong3">A Very Old Person</button>
+    </div>
+
+    <!-- Question 8 -->
+    <div id="question8" style="display:none;">
+      <h3>📺 Fatima File #8</h3>
+
+      <p>I get one free weekend to binge a series all over again. Which one am I choosing?</p>
+
+      <button class="answer" id="q8correct">Twinkling Watermelon</button><br><br>
+      <button class="answer" id="q8wrong1">Twenty Five Twenty One</button><br><br>
+      <button class="answer" id="q8wrong2">All Of Us Are Dead</button><br><br>
+      <button class="answer" id="q8wrong3">Business Proposal</button>
+    </div>
+
+    <!-- Question 9 -->
+    <div id="question9" style="display:none;">
+      <h3>🎬 Fatima File #9</h3>
+
+      <p>If my life was turned into a TV show, which genre would i choose?</p>
+
+      <button class="answer" id="q9wrong1">Drama</button><br><br>
+      <button class="answer" id="q9wrong2">Fantasy</button><br><br>
+      <button class="answer" id="q9wrong3">Crime</button><br><br>
+      <button class="answer" id="q9correct">Sitcom</button>
+    </div>
+
+    <!-- Question 10 -->
+    <div id="question10" style="display:none;">
+      <h3>💇🏽‍♀️ Fatima File #10</h3>
+
+      <p>It's salon day. Which hairstyle am I sure would look good on me?</p>
+
+      <button class="answer" id="q10correct">Rasta</button><br><br>
+      <button class="answer" id="q10wrong1">Juu Chini</button><br><br>
+      <button class="answer" id="q10wrong2">Juu Juu</button><br><br>
+      <button class="answer" id="q10wrong3">Bangs</button>
+    </div>
+
+    <!-- Question 11 -->
+    <div id="question11" style="display:none;">
+      <h3>🌈 Fatima File #11</h3>
+
+      <p>After a long day, which cartoon instantly feels like home to me?</p>
+
+      <button class="answer" id="q11wrong1">SpongeBob</button><br><br>
+      <button class="answer" id="q11correct">My Little Pony</button><br><br>
+      <button class="answer" id="q11wrong2">Family Guy</button><br><br>
+      <button class="answer" id="q11wrong3">The Simpsons</button>
+    </div>
+
+    <!-- Question 12 -->
+    <div id="question12" style="display:none;">
+      <h3>🍝 Fatima File #12</h3>
+
+      <p>Which meal can i eat over and over again without ever hating it?</p>
+
+      <button class="answer" id="q12correct">Pasta</button><br><br>
+      <button class="answer" id="q12wrong1">Rice</button><br><br>
+      <button class="answer" id="q12wrong2">Pancakes</button><br><br>
+      <button class="answer" id="q12wrong3">Cake</button>
+    </div>
+
+    <!-- Question 13 -->
+    <div id="question13" style="display:none;">
+      <h3>📺 Fatima File #13</h3>
+
+      <p>Which TV show could I happily rewatch over and over without getting bored?</p>
+
+      <button class="answer" id="q13wrong1">Gossip Girl</button><br><br>
+      <button class="answer" id="q13wrong2">Pretty Little Liars</button><br><br>
+      <button class="answer" id="q13correct">Brooklyn Nine-Nine</button><br><br>
+      <button class="answer" id="q13wrong3">One Tree Hill</button>
+    </div>
+
+    <!-- Question 14 -->
+    <div id="question14" style="display:none;">
+      <h3>🎬 Fatima File #14</h3>
+
+      <p>If you wanted to make me cry (in a good way), which movie would you put on?</p>
+
+      <button class="answer" id="q14correct">Me Before You</button><br><br>
+      <button class="answer" id="q14wrong1">Five Feet Apart</button><br><br>
+      <button class="answer" id="q14wrong2">27 Dresses</button><br><br>
+      <button class="answer" id="q14wrong3">My Fault</button>
+    </div>
+
+    <!-- Question 15 -->
+    <div id="question15" style="display:none;">
+      <h3>📱 Fatima File #15</h3>
+
+      <p>I'm stranded in the middle of a desert. What would I be begging for first?</p>
+
+      <button class="answer" id="q15wrong1">Food</button><br><br>
+      <button class="answer" id="q15correct">Wi-Fi & My Phone</button><br><br>
+      <button class="answer" id="q15wrong2">Water</button><br><br>
+      <button class="answer" id="q15wrong3">Air Conditioning</button>
+    </div>
+
+    <!-- Question 16 -->
+    <div id="question16" style="display:none;">
+      <h3>🤝 Fatima File #16</h3>
+
+      <p>If I could instantly become best friends with one fictional character, who would it be?</p>
+
+      <button class="answer" id="q16correct">Jake Peralta</button><br><br>
+      <button class="answer" id="q16wrong1">Stefan Salvatore</button><br><br>
+      <button class="answer" id="q16wrong2">Ladybug</button><br><br>
+      <button class="answer" id="q16wrong3">Tori Vega</button>
+    </div>
+
+    <!-- Question 17 -->
+    <div id="question17" style="display:none;">
+      <h3>💍 Fatima File #17</h3>
+
+      <p>Who's organised enough that I'd trust them to plan my dream wedding?</p>
+
+      <button class="answer" id="q17correct">Amy Santiago</button><br><br>
+      <button class="answer" id="q17wrong1">Rebekah Mikaelson</button><br><br>
+      <button class="answer" id="q17wrong2">Alison DiLaurentis</button><br><br>
+      <button class="answer" id="q17wrong3">Cha Eun-woo</button>
+    </div>
+
+    <!-- Question 18 -->
+    <div id="question18" style="display:none;">
+      <h3>🗣 Fatima File #18</h3>
+
+      <p>Which word accidentally sneaks into almost everything I say?</p>
+
+      <button class="answer" id="q18correct">Bro</button><br><br>
+      <button class="answer" id="q18wrong1">Girl</button><br><br>
+      <button class="answer" id="q18wrong2">What the heck</button><br><br>
+      <button class="answer" id="q18wrong3">Nahh</button>
+    </div>
+
+    <!-- Question 19 -->
+    <div id="question19" style="display:none;">
+      <h3>🏝 Fatima File #18</h3>
+
+      <p>If someone surprised me with a free holiday tomorrow, where would I be packing for?</p>
+
+      <button class="answer" id="q19wrong1">Italy</button><br><br>
+      <button class="answer" id="q19wrong2">France</button><br><br>
+      <button class="answer" id="q19wrong3">Bahamas</button><br><br>
+      <button class="answer" id="q19correct">Maldives</button>
+    </div>
+
+    <!-- Question 20 -->
+    <div id="question20" style="display:none;">
+      <h3>🔬 Fatima File #20</h3>
+
+      <p>Which career dream has stayed with me the longest?</p>
+
+      <button class="answer" id="q20wrong1">Singer / Actor</button><br><br>
+      <button class="answer" id="q20wrong2">Forensic Scientist</button><br><br>
+      <button class="answer" id="q20correct">Criminology</button><br><br>
+      <button class="answer" id="q20wrong3">Medical Doctor</button>
+    </div>
+
+    <!-- Question 21 -->
+    <div id="question21" style="display: none;">
+      <h2>💜 SECRET QUESTION 💜</h2>
+
+      <h3>Question 21</h3>
+
+      <p>Which of these is something Fatima is surprisingly bad at?</p>
+
+      <button class="answer" id="q21correct">👟 Tying my shoelaces</button><br><br>
+      <button class="answer" id="q21wrong1">💃 Dancing</button><br><br>
+      <button class="answer" id="q21wrong2">🎤 Singing</button><br><br>
+      <button class="answer" id="q21wrong3">🦀 Doing a crab walk</button>
+    </div>
+
+    <!-- Question 22 -->
+    <div id="question22" style="display: none;">
+      <h2>💜 FINAL QUESTION 💜</h2>
+
+      <h3>Question 22</h3>
+
+      <p>Who used to be Fatima's celebrity crush?</p>
+
+      <button class="answer" id="q22wrong1">💙 chad michael murray </button><br><br>
+      <button class="answer" id="q22wrong2">💚 dylan O'brien</button><br><br>
+      <button class="answer" id="q22correct">❤️ keith powrer</button><br><br>
+      <button class="answer" id="q22wrong3">🖤 michael jordon</button>
+    </div>
+
+    <!-- End Screen -->
+    <div id="endScreen" style="display: none; text-align: center;">
+      <h1>🏆 The Fatima Games 🏆</h1>
+
+      <h2 class="winner">🏆 Congratulations! 🏆</h2>
+
+      <p>
+      You survived <strong>The Fatima Games!</strong><br><br>
+      The Fatima Council has reviewed your answers...
+      </p>
+
+      <p id="finalScore"></p>
+      <p id="endingMessage"></p>
+      <hr>
+
+      <h3>📖 Answer Key</h3>
+
+      <p>
+      1. Purple 💜<br>
+      2. (firstborn)<br>
+      3. (bryson tiller)<br>
+      4. (moviebox)<br>
+      5. (kitten)<br>
+      6. (sorrows)<br>
+      7. (cat)<br>
+      8. (twinkling watermelon)<br>
+      9. (sitcom)<br>
+      10. (rasta)<br>
+      11. (my little pony)<br>
+      12. (pasta)<br>
+      13. (brooklyn Nine-Nine)<br>
+      14. (me before you)<br>
+      15. (wifi and my phone)<br>
+      16. (jake peralta)<br>
+      17. (Amy Santiago)<br>
+      18. (bro)<br>
+      19. (maldives)<br>
+      20. (crim)<br>
+      21. (tying my shoelaces)<br>
+      22. (keith powers)
+      </p>
+
+      <button onclick="location.reload()">
+          🔄 Play Again
+      </button>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
