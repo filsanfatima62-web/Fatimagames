@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(135deg, #2b1055, #4b0082, #7b2cbf);
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 42px;
+  text-align: center;
+  color: #e9d5ff;
+  text-shadow: 0 0 10px #d896ff,
+               0 0 20px #b266ff,
+               0 0 35px #7b2cbf;
+}
+
+p {
+  font-size: 22px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #8a2be2;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover {
+  background: #b266ff;
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 0 18px #c77dff;
+}
+
+.container {
+  width: 90%;
+  max-width: 650px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+  padding: 30px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .4);
+  animation: float 4s ease-in-out infinite;
+}
+
+h1 {
+  text-shadow: 0 0 10px #c77dff,
+               0 0 20px #9d4edd,
+               0 0 30px #7b2cbf;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 8px #c77dff;
+  }
+  to {
+    text-shadow: 0 0 20px #e0aaff,
+                 0 0 35px #9d4edd;
+  }
+}
+
+input {
+  width: 95%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+button {
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+#endScreen {
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.winner {
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  }
